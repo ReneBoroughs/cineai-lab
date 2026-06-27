@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b0f17"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(250 120) rotate(45) scale(380)">
+      <stop stop-color="#f8d38d" stop-opacity="0.33"/>
+      <stop offset="1" stop-color="#f8d38d" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(940 120) rotate(45) scale(400)">
+      <stop stop-color="#a7f3d0" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#a7f3d0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+  <circle cx="108" cy="108" r="42" fill="#f8d38d"/>
+  <text x="108" y="124" text-anchor="middle" font-family="Arial, sans-serif" font-size="52" font-weight="800" fill="#111827">C</text>
+  <text x="168" y="118" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#f9fafb">CineAI Lab</text>
+  <text x="88" y="300" font-family="Arial, sans-serif" font-size="74" font-weight="800" fill="#f9fafb">AI Audiovisual</text>
+  <text x="88" y="386" font-family="Arial, sans-serif" font-size="74" font-weight="800" fill="#f9fafb">Creation Workshop</text>
+  <text x="90" y="462" font-family="Arial, sans-serif" font-size="28" fill="#cbd5e1">Born with ChatGPT and Codex.</text>
+</svg>
