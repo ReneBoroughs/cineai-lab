@@ -30,3 +30,8 @@ The contact email has been set to `barrios.films@pm.me`.
 ## Notes
 
 This is a static website. It does not need Node.js, a database, or a backend.
+
+
+## Logo update
+
+The visible site logo and browser favicon use `public/cineai-logo.png`.
