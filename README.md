@@ -9,6 +9,8 @@ A short one-page website for presenting CineAI Lab to the OpenAI Startup Communi
 - `script.js` — small footer year script
 - `public/favicon.svg` — browser icon
 - `public/og-image.svg` — preview image for sharing
+- `public/memory-elephant.png` — image for *The Memory of the Elephant*
+- `public/the-father.png` — image for *The Father*
 - `vercel.json` — simple Vercel configuration
 
 ## How to publish with GitHub and Vercel
@@ -23,13 +25,7 @@ A short one-page website for presenting CineAI Lab to the OpenAI Startup Communi
 
 ## Before publishing
 
-In `index.html`, replace:
-
-```html
-hello@cineailab.example
-```
-
-with your real contact email, or remove the contact button if you prefer.
+The contact email has been set to `barrios.films@pm.me`.
 
 ## Notes
 
