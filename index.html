@@ -1,15 +1,304 @@
 <!doctype html>
-
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="CineAI Lab develops original narrative IP and research cases for coherent, directable and editable AI-native cinema." />
-    <meta name="theme-color" content="#08111f" />
-    <title>CineAI Lab — Original IP & AI-Native Cinema Research</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CineAI Lab — Original IP & Research for AI-Native Cinema</title>
+  <meta name="description" content="CineAI Lab is an independent creative and research studio developing original narrative IP and demanding long-form test cases for the next generation of AI filmmaking." />
+  <meta property="og:title" content="CineAI Lab — Original IP & Research for AI-Native Cinema" />
+  <meta property="og:description" content="Original stories, long-form test cases, and creative research for the future of AI cinema." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="CineAI Lab home">
+        <img class="brand-logo" src="assets/cineai-logo.png" alt="CineAI Lab logo" />
+        <span>CineAI Lab</span>
+      </a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+        <a href="#vision">Vision</a>
+        <a href="#projects">Original IP</a>
+        <a href="#symbol">Visual symbol</a>
+        <a href="#research">Research</a>
+        <a href="#creator">Creator</a>
+        <a href="#collaborate">Collaborate</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Independent creative R&amp;D studio</p>
+          <h1>Original stories for the next generation of cinema.</h1>
+          <p class="hero-text">
+            CineAI Lab develops original narrative IP and demanding long-form test cases for AI-native filmmaking.
+            The goal is not to make another clip generator, but to define what creators, researchers and developers
+            still need in order to build coherent, directable and editable films.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Explore the slate</a>
+            <a class="button secondary" href="#research">See the research challenges</a>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Project summary">
+          <div class="stat-card">
+            <span class="stat-label">Positioning</span>
+            <strong>Original IP + Creative model evaluation</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">Mission</span>
+            <strong>Beyond beautiful clips: toward coherent AI cinema</strong>
+          </div>
+          <div class="stat-card">
+            <span class="stat-label">What CineAI Lab offers</span>
+            <ul>
+              <li>Original story worlds</li>
+              <li>Long-form stress tests</li>
+              <li>Human evaluation of filmic quality</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section id="vision" class="section split">
+        <div class="reveal">
+          <p class="eyebrow">Vision</p>
+          <h2>From isolated clips to coherent film experiences.</h2>
+        </div>
+        <div class="body-copy reveal">
+          <p>
+            Today’s tools can produce impressive still images and striking short videos. Long-form filmmaking demands more:
+            persistent identity, scene memory, directable performance, multilingual dialogue, selective scene regeneration,
+            and a workflow that creators can actually control.
+          </p>
+          <div class="flow-grid">
+            <div>Story</div>
+            <div>Characters</div>
+            <div>Memory</div>
+            <div>Performance</div>
+            <div>Scene continuity</div>
+            <div>Editable film</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Original IP</p>
+          <h2>A focused slate of narrative projects and demonstrators.</h2>
+          <p>
+            Each project is both a creative work and a test case for the future of AI-native cinema.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <figure class="project-image">
+              <img src="assets/the-father.png" alt="A corporate leader giving a speech in front of oceanic and microscopic imagery." />
+            </figure>
+            <div class="card-meta">Case Study 01</div>
+            <h3>The Father</h3>
+            <p>
+              A contemporary dramatic adaptation centered on power, paternity, public image and collapse. It tests continuity of character,
+              performance direction, speeches, intimate conflict and the ability to revisit a single scene without breaking the whole film.
+            </p>
+            <ul class="tag-list">
+              <li>Character continuity</li>
+              <li>Dialogue & lip-sync</li>
+              <li>Corporate and intimate staging</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <figure class="project-image">
+              <img src="assets/memory-elephant.png" alt="Elephant and mouse facing each other in a poetic, reflective landscape." />
+            </figure>
+            <div class="card-meta">Case Study 02</div>
+            <h3>Memories</h3>
+            <p>
+              A visual and poetic exploration of memory, fear and perception. It tests non-human motion, visual continuity, atmosphere,
+              dream logic and the translation of still images into emotionally coherent cinematic movement.
+            </p>
+            <ul class="tag-list">
+              <li>Poetic visual continuity</li>
+              <li>Animal motion</li>
+              <li>Atmosphere & texture</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal project-featured">
+            <figure class="project-image">
+             <img src="assets/missing-part.png" alt="An older man seated at a table with papers while a woman stands by a window at dusk, conveying retirement and hidden tensions." />
+            </figure>
+            <div class="card-meta">Case Study 03</div>
+            <h3>The missing piece</h3>
+            <p>
+              A rapidly developed dramatic project about retirement, fragility, social bonds and the quiet conflicts that surface when time,
+              identity and future security are thrown into question. It tests ensemble scenes, intimate realism and slow-burn emotional shifts.
+            </p>
+            <ul class="tag-list">
+              <li>Ensemble drama</li>
+              <li>Social realism</li>
+              <li>Emotional continuity</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+
+
+      <section id="symbol" class="section split symbol-section">
+        <div class="reveal">
+         
+          <p>The Missing Pieces</p>
+          <p class="hero-text">
+           We are working to expresses absences, incompleteness, quiet harmony and the search for meaning.
+          </p>
+        </div>
+        <div class="reveal symbol-card">
+          <img src="assets/puzzle-missing-piece.png" alt="Chinese-inspired watercolor landscape with puzzle pieces, a small boat, and the character for beauty in a missing piece." />
+        </div>
+      </section>
+
+      <section id="research" class="section highlight">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Research challenges</p>
+          <h2>What is still missing for AI-native cinema?</h2>
+          <p>
+            CineAI Lab is designed to help developers and researchers see where current systems still fall short when asked to behave like cinema tools rather than clip generators.
+          </p>
+        </div>
+
+        <div class="challenge-grid">
+          <article class="reveal">
+            <h3>Persistent identity</h3>
+            <p>Keep the same character credible across many scenes, angles, emotions and time intervals.</p>
+          </article>
+          <article class="reveal">
+            <h3>Directable performance</h3>
+            <p>Support pauses, hesitations, looks, breathing, emotional nuance and actor direction beyond literal speech.</p>
+          </article>
+          <article class="reveal">
+            <h3>Scene memory</h3>
+            <p>Preserve costumes, props, locations and staging across multiple generations.</p>
+          </article>
+          <article class="reveal">
+            <h3>Selective regeneration</h3>
+            <p>Rebuild scene 12 without accidentally rewriting scenes 3, 8 and 14.</p>
+          </article>
+          <article class="reveal">
+            <h3>Long-form narrative coherence</h3>
+            <p>Follow dramatic arcs over the duration of a short or feature-length film, not only isolated moments.</p>
+          </article>
+          <article class="reveal">
+            <h3>Human creative control</h3>
+            <p>Keep authorship, revision and judgment in human hands while benefiting from AI acceleration.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section benchmark">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Open film model</p>
+          <h2>A practical benchmark, not a vague promise.</h2>
+        </div>
+
+        <div class="benchmark-grid">
+          <div class="benchmark-card reveal">
+            <span>01</span>
+            <h3>Define the scene</h3>
+            <p>Create a narrative situation with clear emotional, visual and technical constraints.</p>
+          </div>
+          <div class="benchmark-card reveal">
+            <span>02</span>
+            <h3>Generate and compare</h3>
+            <p>Test current tools against the same scene, references and performance expectations.</p>
+          </div>
+          <div class="benchmark-card reveal">
+            <span>03</span>
+            <h3>Document failures</h3>
+            <p>Record identity drift, facial instability, scene incoherence and workflow friction.</p>
+          </div>
+          <div class="benchmark-card reveal">
+            <span>04</span>
+            <h3>Inform better models</h3>
+            <p>Turn creative frustration into actionable research questions for future systems.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="creator" class="section split creator-section">
+        <div class="reveal">
+          <p class="eyebrow">Creator</p>
+          <h2>Rene Boroughs</h2>
+        </div>
+        <div class="body-copy reveal">
+          <p>
+            is a writer and founder of CineAI Lab. Working across health,
+            family conflict, ageing, science and human vulnerability, he develops original stories that can also serve
+            as high-value case studies for the next generation of AI filmmaking tools.
+          </p>
+          <p>
+            CineAI Lab does not offer isolated ideas. It develops original narrative properties, story worlds and research-driven creative briefs
+            that can support producers, researchers and multimodal development teams.
+          </p>
+        </div>
+      </section>
+
+      <section id="collaborate" class="section closing">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Collaborate</p>
+          <h2>Looking for dialogue with developers, researchers and creative partners.</h2>
+          <p>
+            CineAI Lab welcomes conversations with teams working on long-form multimodal generation, creative tooling,
+            AI-native production workflows, and original narrative development.
+          </p>
+        </div>
+
+        <div class="collab-grid">
+          <div class="collab-card reveal">
+            <h3>For research teams</h3>
+            <p>Use CineAI Lab as a source of demanding real-world narrative test cases and human evaluation criteria.</p>
+          </div>
+          <div class="collab-card reveal">
+            <h3>For producers</h3>
+            <p>Discover original IP with strong thematic identity, rapid development capacity and cinematic ambition.</p>
+          </div>
+          <div class="collab-card reveal">
+            <h3>For creative technologists</h3>
+            <p>Build tools that respect continuity, performance and selective editability instead of merely generating clips.</p>
+          </div>
+        </div>
+
+        <div class="closing-actions reveal">
+          <a class="button primary" href="mailto:barrios.films@pm.me?subject=CineAI%20Lab%20collaboration">Contact CineAI Lab</a>
+          <a class="button secondary" href="https://cineai-lab.vercel.app" target="_blank" rel="noreferrer">Current live site</a>
+        </div>
+
+        <p class="fine-print reveal">
+          CineAI Lab is an independent project and is not affiliated with OpenAI. It is a public-facing creative and research initiative.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> CineAI Lab.</p>
+      <p>Original IP &amp; creative research for AI-native cinema.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
