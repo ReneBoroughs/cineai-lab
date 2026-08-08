@@ -105,17 +105,24 @@ function HomePage({ navigate }) {
   return (
     <>
       <section className="paper-section puzzle-home">
-        <div className="page-width puzzle-home-inner">
-          <div className="puzzle-home-copy">
-            {home.eyebrow ? <p className="eyebrow dark-eyebrow">{home.eyebrow}</p> : null}
-            <h1>{home.title}</h1>
-            {home.lead ? <p className="editorial-lead">{home.lead}</p> : null}
-            <div className="actions">
-              <a className="button ink-button" href="/projects/" onClick={(event) => navigate(event, '/projects/')}>{home.primary}<span aria-hidden="true">↘</span></a>
-              <a className="button outline-ink" href="/research/" onClick={(event) => navigate(event, '/research/')}>{home.secondary}<span aria-hidden="true">↗</span></a>
-            </div>
-          </div>
-        </div>
+      <div className="page-width puzzle-home-inner">
+  <div className="puzzle-home-copy">
+    {home.eyebrow ? <p className="eyebrow dark-eyebrow">{home.eyebrow}</p> : null}
+    <h1>{home.title}</h1>
+    {home.lead ? <p className="editorial-lead">{home.lead}</p> : null}
+    <div className="actions">
+      <a className="button ink-button" href="/projects/" onClick={(event) => navigate(event, '/projects/')}>{home.primary}<span aria-hidden="true">↘</span></a>
+      <a className="button outline-ink" href="/research/" onClick={(event) => navigate(event, '/research/')}>{home.secondary}<span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+
+  <figure className="puzzle-home-art">
+    <img
+      src="/media/home-hero-moving-field.png"
+      alt="Floating puzzle piece over a cinematic landscape"
+    />
+  </figure>
+</div>
       </section>
 
       <section className="publication-home">
