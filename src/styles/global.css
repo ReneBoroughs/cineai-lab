@@ -1428,3 +1428,49 @@ hr, .separator, .watch-cover-copy::after {
     transition: none !important;
   }
 }
+
+/* Home image inserted in the existing puzzle-home layout */
+.puzzle-home-inner {
+  display: grid;
+  grid-template-columns: minmax(320px, 0.85fr) minmax(420px, 1.15fr);
+  align-items: center;
+  gap: clamp(32px, 6vw, 96px);
+}
+
+.puzzle-home-art {
+  margin: 0;
+  width: 100%;
+  min-height: 560px;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+}
+
+.puzzle-home-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 560px;
+  object-fit: cover;
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .puzzle-home-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .puzzle-home-art {
+    min-height: 360px;
+  }
+
+  .puzzle-home-art img {
+    min-height: 360px;
+  }
+}
+
+
+
+
+
+
