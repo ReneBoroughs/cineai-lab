@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 import t from './content.js';
 
 const pageFromPath = () => {
@@ -146,6 +146,8 @@ function HomePage({ navigate }) {
 
 // ---- ProjectsPage.jsx ----
 function ProjectsPage({ navigate }) {
+  const prototype = t.projects.prototype;
+
   return (
     <>
       <section className="projects-cover project-visual-cover page-width">
@@ -163,20 +165,46 @@ function ProjectsPage({ navigate }) {
 
       <div className="project-reel">
         {t.projects.cards.map((project, index) => (
-          <section className={`project-feature project-feature-${index + 1}`} key={project.title}>
-            <div className="project-feature-media">
-              <img src={project.image} alt={project.alt} />
-              <span className="project-feature-number">{String(index + 1).padStart(2, '0')}</span>
-            </div>
-            <div className="project-feature-copy">
-              <small>{project.meta}</small>
-              <h2>{project.title}</h2>
-              <p>{project.text}</p>
-              <ul>
-                {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
-              </ul>
-            </div>
-          </section>
+          <Fragment key={project.title}>
+            <section className={`project-feature project-feature-${index + 1}`}>
+              <div className="project-feature-media">
+                <img src={project.image} alt={project.alt} />
+                <span className="project-feature-number">{String(index + 1).padStart(2, '0')}</span>
+              </div>
+              <div className="project-feature-copy">
+                <small>{project.meta}</small>
+                <h2>{project.title}</h2>
+                <p>{project.text}</p>
+                <ul>
+                  {project.tags.map((tag) => <li key={tag}>{tag}</li>)}
+                </ul>
+              </div>
+            </section>
+
+            {index === 0 && prototype ? (
+              <section className="project-prototype" aria-labelledby="talking-ceo-title">
+                <div className="page-width project-prototype-inner">
+                  <div className="project-prototype-copy">
+                    <p className="eyebrow light-eyebrow">{prototype.eyebrow}</p>
+                    <h3 id="talking-ceo-title">{prototype.title}</h3>
+                    <p>{prototype.text}</p>
+                    <small>{prototype.note}</small>
+                  </div>
+                  <figure className="project-prototype-media">
+                    <video
+                      controls
+                      playsInline
+                      preload="metadata"
+                      poster={prototype.poster}
+                      aria-label={prototype.label}
+                    >
+                      <source src={prototype.video} type="video/mp4" />
+                    </video>
+                  </figure>
+                </div>
+              </section>
+            ) : null}
+          </Fragment>
         ))}
       </div>
 

@@ -163,6 +163,15 @@ const content = {
     "eyebrow": "Original IP",
     "title": "A focused slate of narrative projects and demonstrators.",
     "intro": "Each project is both a creative work and a test case for the future of AI-native cinema.",
+    "prototype": {
+      "eyebrow": "Prototype A · Talking CEO",
+      "title": "The speech begins to move.",
+      "text": "A first moving-image experiment for The Father, testing presence, restrained gesture, gaze and spoken performance while preserving the character’s visual identity.",
+      "note": "AI-generated sequence · Directed and edited by CineAI Lab · August 2026",
+      "video": "/media/the-father-speaking-prototype.mp4",
+      "poster": "/media/the-father.png",
+      "label": "Play the Talking CEO prototype"
+    },
     "cards": [
       {
         "meta": "Case Study 01",

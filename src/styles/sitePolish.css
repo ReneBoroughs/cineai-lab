@@ -91,3 +91,75 @@
   content: "Projects";
   font-size: .8rem;
 }
+
+/* The Father: keep the validated still image, then reveal the moving test. */
+.project-prototype {
+  padding: clamp(4.5rem, 8vw, 8rem) 0;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  background:
+    radial-gradient(circle at 78% 24%, rgba(211,100,67,.18), transparent 28%),
+    linear-gradient(135deg, #141211 0%, #29120f 52%, #0d0d0c 100%);
+}
+
+.project-prototype-inner {
+  display: grid;
+  grid-template-columns: minmax(240px, .42fr) minmax(0, 1.58fr);
+  gap: clamp(2.5rem, 7vw, 7rem);
+  align-items: center;
+}
+
+.project-prototype-copy h3 {
+  max-width: 9ch;
+  margin: 0 0 1.5rem;
+  color: white;
+  font-family: var(--serif);
+  font-size: clamp(2.6rem, 5vw, 5.4rem);
+  font-weight: 500;
+  letter-spacing: -.045em;
+  line-height: .96;
+}
+
+.project-prototype-copy > p:not(.eyebrow) {
+  max-width: 34rem;
+  color: rgba(255,255,255,.68);
+}
+
+.project-prototype-copy small {
+  display: block;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255,255,255,.16);
+  color: rgba(255,255,255,.48);
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  line-height: 1.55;
+  text-transform: uppercase;
+}
+
+.project-prototype-media {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.14);
+  background: #050505;
+  box-shadow: 0 32px 90px rgba(0,0,0,.42);
+}
+
+.project-prototype-media video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #050505;
+}
+
+@media (max-width: 900px) {
+  .project-prototype-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .project-prototype-copy h3 {
+    max-width: 12ch;
+  }
+}
