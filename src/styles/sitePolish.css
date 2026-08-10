@@ -45,6 +45,40 @@
   transform: none !important;
 }
 
+/* v2026-08-10 · Hard stop for the Watch page visual drift in Production. */
+.current-watch .watch-cover-art,
+.current-watch .watch-cover-art *,
+.current-watch .watch-cover-art::before,
+.current-watch .watch-cover-art::after,
+.current-watch .watch-cover-art img {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+  will-change: auto !important;
+}
+
+.current-watch .watch-cover-art img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  opacity: 1 !important;
+}
+
+.current-watch .page-transition,
+.current-watch .page-transition.is-leaving,
+.current-watch .page-transition.is-entering,
+.current-watch main,
+.current-watch section,
+.current-watch figure,
+.current-watch img {
+  animation: none !important;
+  transition-property: none !important;
+  transform: none !important;
+  filter: none !important;
+  will-change: auto !important;
+}
+
 /* Public-facing navigation uses a clearer label than the internal shorthand “Original IP”. */
 .nav a[href="/projects/"] span {
   font-size: 0;
