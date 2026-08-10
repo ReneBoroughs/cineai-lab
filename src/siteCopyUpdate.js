@@ -40,6 +40,10 @@ if (content.projects.cards?.[2]) {
 content.research.eyebrow = 'Open questions';
 content.research.title = 'What is still missing?';
 content.research.intro = 'AI can already generate striking images, voices and short clips. Coherent filmmaking is harder. CineAI Lab records the unresolved problems found in practical tests.';
+content.research.items.push([
+  'Creator-first access',
+  'Explore an open production model in which creators can experiment without paying for every attempt, retain ownership and direction of their work, and contribute a limited, capped share of revenue only after meaningful commercial success.',
+]);
 content.research.manuscript.description = 'The working manuscript brings together the experiments, failures, open-film questions and European context.';
 
 content.benchmark.eyebrow = 'Working method';
