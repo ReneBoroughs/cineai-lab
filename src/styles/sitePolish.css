@@ -9,6 +9,42 @@
   transform: none !important;
 }
 
+/* Stop automatic image motion across hero and visual panels. */
+.cinema-hero-media img,
+.projects-hero-art img,
+.watch-cover-art img,
+.puzzle-home-art img,
+.work-tile img,
+.project-feature-media img,
+.research-puzzle-art img,
+.research-puzzle-piece img,
+.project-symbol-media img,
+.about-logo-object img,
+.footer-brand img,
+.brand-mark img {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+}
+
+.work-tile:hover img,
+.project-feature:hover img,
+.projects-hero-art:hover img,
+.watch-cover-art:hover img,
+.puzzle-home-art:hover img {
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+}
+
+/* Keep the page itself from introducing a sliding visual effect during navigation. */
+.page-transition,
+.page-transition.is-leaving,
+.page-transition.is-entering {
+  filter: none !important;
+  transform: none !important;
+}
+
 /* Public-facing navigation uses a clearer label than the internal shorthand “Original IP”. */
 .nav a[href="/projects/"] span {
   font-size: 0;
