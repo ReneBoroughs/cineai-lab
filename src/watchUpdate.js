@@ -5,7 +5,7 @@ const previousItems = content.watch.items.filter((item) =>
 );
 
 content.watch.updated = 'Updated 10 August 2026';
-content.watch.note = 'A concise weekly selection of opportunities, public initiatives and legal developments relevant to CineAI Lab, prioritising France, Belgium and Europe and linking to official sources.';
+content.watch.note = 'A concise weekly selection of opportunities, public initiatives and legal developments relevant to CineAI Lab, prioritising France, Belgium and Europe and linking to official sources. The watch also follows a central question for independent creators: how to move from closed credit-based platforms toward transparent, controllable and rights-aware film workflows.';
 content.watch.items = [
   {
     date: '10 AUG 2026',
@@ -34,5 +34,5 @@ content.watch.items = [
   ...previousItems,
 ];
 content.watch.perspectiveEyebrow = 'CineAI Lab priority';
-content.watch.perspectiveTitle = 'Keep AI generation traceable and human direction visible.';
-content.watch.perspectiveText = 'The immediate priority is to develop an open audiovisual workflow in which sources, models and AI interventions can be traced while selection, revision, performance choices and final validation remain clearly attributable to human creative direction.';
+content.watch.perspectiveTitle = 'Toward an Open Film Workspace';
+content.watch.perspectiveText = 'CineAI Lab explores a free and open workspace for independent cinema, where AI is not a black box but one instrument inside a transparent creative pipeline. The goal is not another opaque button that turns a prompt into a lottery ticket, but a modular environment for script, visual references, AI-assisted images, animation, voice, editing, export and rights tracking. Artistic decisions should remain explicit, traceable and human-led.';
