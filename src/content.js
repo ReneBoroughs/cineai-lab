@@ -169,7 +169,7 @@ const content = {
       "text": "A first moving-image experiment for The Father, testing presence, restrained gesture, gaze and spoken performance while preserving the character’s visual identity.",
       "note": "AI-generated sequence · Directed and edited by CineAI Lab · August 2026",
       "video": "/media/the-father-speaking-prototype.mp4",
-      "poster": "/media/the-father.png",
+      "poster": "/media/the-father-speaking-poster.jpg",
       "label": "Play the Talking CEO prototype"
     },
     "cards": [
