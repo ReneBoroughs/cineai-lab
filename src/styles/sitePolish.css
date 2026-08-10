@@ -1,0 +1,20 @@
+/* Keep project images visually still while the page is browsed. */
+.project-feature-media img {
+  transition: none !important;
+  transform: none !important;
+  animation: none !important;
+}
+
+.project-feature:hover .project-feature-media img {
+  transform: none !important;
+}
+
+/* Public-facing navigation uses a clearer label than the internal shorthand “Original IP”. */
+.nav a[href="/projects/"] span {
+  font-size: 0;
+}
+
+.nav a[href="/projects/"] span::after {
+  content: "Projects";
+  font-size: .8rem;
+}
