@@ -24,6 +24,11 @@ content.hero.missionValue = 'What does filmmaking still need beyond generated im
 content.projects.eyebrow = 'Projects · test cases';
 content.projects.title = 'Stories used to test an unfinished technology.';
 content.projects.intro = 'These are not finished AI films. Each project is used to test a practical problem: continuity, performance, movement, voice or workflow.';
+if (content.projects.prototype) {
+  content.projects.prototype.note = 'AI-assisted prototype · Experimental multi-tool workflow · Tools documented when technically verified · August 2026';
+  content.projects.prototype.video = '/media/the-father-speaking-prototype.mp4?v=20260812';
+  content.projects.prototype.poster = '/media/the-father-speaking-poster.jpg?v=20260812';
+}
 if (content.projects.cards?.[0]) {
   content.projects.cards[0].meta = 'Experiment 01';
   content.projects.cards[0].text = 'A contemporary dramatic adaptation used to test character continuity, spoken performance and the ability to revise one scene without breaking the rest.';
