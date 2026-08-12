@@ -12,6 +12,17 @@ const pageFromPath = () => {
 
 const pathForHref = (href) => new URL(href, window.location.origin).pathname;
 
+const resetVideoToPoster = (event) => {
+  const video = event.currentTarget;
+  video.pause();
+  try {
+    video.currentTime = 0;
+  } catch (error) {
+    // Some browsers may refuse seeking while the media is resetting.
+  }
+  video.load();
+};
+
 // ---- Header.jsx ----
 function Header({ currentPage, navigate }) {
   const [open, setOpen] = useState(false);
@@ -197,6 +208,7 @@ function ProjectsPage({ navigate }) {
                       preload="metadata"
                       poster={prototype.poster}
                       aria-label={prototype.label}
+                      onEnded={resetVideoToPoster}
                     >
                       <source src={prototype.video} type="video/mp4" />
                     </video>
