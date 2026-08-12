@@ -70,3 +70,17 @@ content.collaborate.intro = 'CineAI Lab welcomes dialogue with filmmakers, resea
 
 content.footer = 'Independent experiments on cinema and AI.';
 content.common.projects = 'Projects';
+
+if (typeof document !== 'undefined') {
+  document.addEventListener(
+    'ended',
+    (event) => {
+      const video = event.target;
+      if (video instanceof HTMLVideoElement) {
+        video.pause();
+        video.currentTime = 0;
+      }
+    },
+    true,
+  );
+}
