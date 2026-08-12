@@ -23,6 +23,55 @@ const resetVideoToPoster = (event) => {
   video.load();
 };
 
+const pageMetadata = {
+  home: {
+    path: '/',
+    title: 'CineAI Lab — AI-Native Cinema Research & Film Experiments',
+    description: 'CineAI Lab is an independent French research and creation initiative developing AI-native cinema workflows and long-form film experiments.',
+  },
+  projects: {
+    path: '/projects/',
+    title: 'Original Film Projects — CineAI Lab',
+    description: 'Explore The Father, Memories and The Missing Piece: three narrative projects testing performance, continuity and long-form AI-native cinema.',
+  },
+  research: {
+    path: '/research/',
+    title: 'AI-Native Cinema Research — CineAI Lab',
+    description: 'Research on persistent characters, directable performance, scene memory, selective regeneration and coherent feature-length AI filmmaking.',
+  },
+  watch: {
+    path: '/watch/',
+    title: 'Cinema & AI Watch — CineAI Lab',
+    description: 'A selective, source-linked watch on AI video, cinema, rights, regulation, tools and production developments in Europe and worldwide.',
+  },
+  about: {
+    path: '/about/',
+    title: 'About CineAI Lab — Dr Renato Barrios',
+    description: 'Meet Dr Renato Barrios and discover CineAI Lab, an independent cinema and artificial intelligence research initiative based in France.',
+  },
+};
+
+const updateDocumentMetadata = (page) => {
+  const metadata = pageMetadata[page] || pageMetadata.home;
+  const canonicalUrl = new URL(metadata.path, 'https://cineai-lab.org').href;
+  document.title = metadata.title;
+
+  const setMeta = (selector, value) => {
+    const element = document.querySelector(selector);
+    if (element) element.setAttribute('content', value);
+  };
+
+  setMeta('meta[name="description"]', metadata.description);
+  setMeta('meta[property="og:title"]', metadata.title);
+  setMeta('meta[property="og:description"]', metadata.description);
+  setMeta('meta[property="og:url"]', canonicalUrl);
+  setMeta('meta[name="twitter:title"]', metadata.title);
+  setMeta('meta[name="twitter:description"]', metadata.description);
+
+  const canonical = document.querySelector('#canonical-url');
+  if (canonical) canonical.setAttribute('href', canonicalUrl);
+};
+
 // ---- Header.jsx ----
 function Header({ currentPage, navigate }) {
   const [open, setOpen] = useState(false);
@@ -445,6 +494,10 @@ export default function App() {
   const [currentPage, setCurrentPage] = useState(pageFromPath());
   const [transitioning, setTransitioning] = useState(false);
   const Page = pages[currentPage] || HomePage;
+
+  useEffect(() => {
+    updateDocumentMetadata(currentPage);
+  }, [currentPage]);
 
   useEffect(() => {
     const onPopState = () => {

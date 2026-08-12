@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cineai-lab.org/sitemap.xml
