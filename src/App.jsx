@@ -1,6 +1,5 @@
 import { Fragment, useEffect, useState } from 'react';
 import t from './content.js';
-
 const pageFromPath = () => {
   const path = window.location.pathname.replace(/\/+$/, '') || '/';
   if (path === '/projects') return 'projects';
@@ -9,9 +8,7 @@ const pageFromPath = () => {
   if (path === '/about') return 'about';
   return 'home';
 };
-
 const pathForHref = (href) => new URL(href, window.location.origin).pathname;
-
 const resetVideoToPoster = (event) => {
   const video = event.currentTarget;
   video.pause();
@@ -22,7 +19,6 @@ const resetVideoToPoster = (event) => {
   }
   video.load();
 };
-
 const pageMetadata = {
   home: {
     path: '/',
