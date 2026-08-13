@@ -269,18 +269,6 @@ function ProjectsPage({ navigate }) {
         ))}
       </div>
 
-      <section className="project-closing paper-section">
-        <div className="page-width project-symbol-layout">
-          <div className="project-symbol-media">
-            <img src="/media/puzzle-missing-piece.png" alt={t.symbol.alt} />
-          </div>
-          <div className="project-symbol-copy">
-            <p className="eyebrow dark-eyebrow">{t.symbol.title}</p>
-            <h2>{t.symbol.text}</h2>
-            <a className="button ink-button" href="/research/" onClick={(event) => navigate(event, '/research/')}>{t.common.research}<span aria-hidden="true">↘</span></a>
-          </div>
-        </div>
-      </section>
     </>
   );
 }
@@ -303,6 +291,18 @@ function ResearchPage() {
             <p className="eyebrow dark-eyebrow">{t.research.eyebrow}</p>
             <h1>{t.research.title}</h1>
             <p className="editorial-lead">{t.research.intro}</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="project-closing paper-section research-symbol-section">
+        <div className="page-width project-symbol-layout">
+          <div className="project-symbol-media">
+            <img src="/media/puzzle-missing-piece.png" alt={t.symbol.alt} />
+          </div>
+          <div className="project-symbol-copy">
+            <p className="eyebrow dark-eyebrow">{t.symbol.title}</p>
+            <h2>{t.symbol.text}</h2>
           </div>
         </div>
       </section>
