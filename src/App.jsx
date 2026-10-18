@@ -190,7 +190,7 @@ function HomePage({ navigate }) {
           <div className="publication-home-copy">
             <p>{home.manuscriptIntro}</p>
             <p className="publication-meta">{manuscript.status}</p>
-            <a className="button primary" href={manuscript.viewer || `/documents/${manuscript.file}`} target="_blank" rel="noreferrer">
+            <a className="button primary" href={`/documents/${manuscript.file}`} target="_blank" rel="noreferrer">
               {manuscript.button}<span aria-hidden="true">↗</span>
             </a>
           </div>
@@ -392,7 +392,7 @@ function ResearchPage() {
             <p className="language-note-dark">{manuscript.languageNote}</p>
             <div className="manuscript-stage-bottom">
               <span>{manuscript.status}</span>
-              <a className="button primary" href={manuscript.viewer || `/documents/${manuscript.file}`} target="_blank" rel="noreferrer">{manuscript.button}<span aria-hidden="true">↗</span></a>
+              <a className="button primary" href={`/documents/${manuscript.file}`) target="_blank" rel="noreferrer">{manuscript.button}<span aria-hidden="true">↗</span></a>
             </div>
           </div>
         </div>
