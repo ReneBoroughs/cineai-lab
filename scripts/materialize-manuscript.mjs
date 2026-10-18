@@ -1,4 +1,4 @@
-import { readFile, writeFile } from 'node:fs/promises';
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
 import path from 'node:path';
 
@@ -28,5 +28,6 @@ if (pdf.length !== expectedSize || sha256 !== expectedSha256) {
   );
 }
 
+await mkdir(path.dirname(output), { recursive: true });
 await writeFile(output, pdf);
 console.log(`Materialized manuscript v0.10 (${pdf.length} bytes, ${sha256})`);
