@@ -251,10 +251,11 @@ const content = {
       "heading": "One document, one stable reference.",
       "status": "Version 0.10 · 18 October 2026 · English reference edition",
       "title": "Experimental Foundations for Open AI-Native Cinema",
-      "description": "The single English reference manuscript consolidates the experimental record, the sustained working collaboration with ChatGPT, the open-film argument, historical and European perspectives, a global technology watch and verified clickable official-source links.",
+      "description": "Version 0.10 reframes CineAI Lab around image-directed filmmaking, DIRECTOR, CineLingo, persistent film memory, selective motion and replaceable AI engines.",
       "languageNote": "This website and the reference manuscript are published in English only, used here as the international working language of AI research, open-source software and audiovisual technology.",
-      "button": "Download the manuscript",
-      "file": "CineAI_Lab_Experimental_Foundations_Open_AI_Native_Cinema.pdf"
+      "button": "Read the manuscript",
+      "file": "CineAI_Lab_Experimental_Foundations_Open_AI_Native_Cinema.pdf",
+      "viewer": "/documents/manuscript.html"
     }
   },
   "director": {
