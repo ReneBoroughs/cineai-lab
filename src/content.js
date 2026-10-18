@@ -311,112 +311,96 @@ const content = {
   "watch": {
     "eyebrow": "Cinema & AI watch",
     "title": "Signals from a moving field.",
-    "intro": "Selected developments in cinema, audiovisual creation and artificial intelligence worldwide, with particular attention to France, Belgium and Europe. Sources are linked directly so that the watch remains verifiable rather than promotional.",
-    "updated": "Updated 7 August 2026",
+    "intro": "A selective watch on developments that matter for image-first filmmaking: controllable video generation, first/last-frame workflows, faster iteration, provenance, editing and the integration of AI into creative interfaces.",
+    "updated": "Updated 18 October 2026",
     "feedEyebrow": "Selected developments",
     "feedTitle": "What changed recently",
-    "note": "This page records a small number of developments that matter for CineAI Lab: model capabilities, audiovisual experiments, public initiatives, licensing, rights, transparency, training and the relation between open and proprietary tools.",
+    "note": "The watch is deliberately selective. It follows changes that may alter the practical relationship between a filmmaker, validated images, movement, editing and AI execution.",
     "items": [
       {
-        "date": "20 JUL 2026",
-        "region": "EUROPE",
-        "title": "European Commission publishes AI Act transparency guidance",
-        "text": "The Commission clarified Article 50 duties for providers and deployers, including machine-readable marking and disclosure requirements for certain synthetic content. The obligations apply from 2 August 2026.",
-        "source": "European Commission",
-        "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems"
+        "date": "13 OCT 2026",
+        "region": "COMFYUI · NVIDIA",
+        "title": "ComfyUI adds RTX frame-generation nodes for interpolation between existing frames",
+        "text": "New NVIDIA VFX nodes can generate intermediate frames between adjacent images for frame-rate conversion or slow motion. The current implementation targets NVIDIA RTX hardware, but the workflow is notable because it treats existing frames as anchors rather than asking a model to reinvent the whole shot.",
+        "source": "ComfyUI",
+        "url": "https://blog.comfy.org/p/nvidia-vfx-nodes-for-video-upscaling"
       },
       {
-        "date": "21 JUL 2026",
-        "region": "CHINA · GLOBAL",
-        "title": "China’s MediaAIAC programme targets AI across the audiovisual production chain",
-        "text": "China’s National Radio and Television Administration opened a 2026 competition covering story development, scripting, storyboards, image and sound generation, digital humans, multilingual dubbing, provenance and AI-content safety. It is a useful signal of coordinated public-sector attention to deployable audiovisual AI.",
-        "source": "National Radio and Television Administration of China",
-        "url": "https://www.nrta.gov.cn/art/2026/7/21/art_113_73728.html"
+        "date": "02 OCT 2026",
+        "region": "FILM · PROVENANCE",
+        "title": "Human Provenance in Film moves toward a production-tested declaration standard",
+        "text": "The initiative released consultation update v0.9.3 after testing declarations across productions and reviewing more than 300 documented uses or attempted uses of AI. The work distinguishes AI used during production from the provenance of the finished film.",
+        "source": "Human Provenance in Film",
+        "url": "https://humanprovenance.film/news/consultation-update-september/"
       },
       {
-        "date": "15 JUL 2026",
-        "region": "CHINA · WORLD",
-        "title": "Alibaba Wan 2.7 extends image-to-video toward multi-shot production",
-        "text": "Wan 2.7 supports multimodal inputs, video continuation, 2–15 second outputs, 720p/1080p, audio synchronisation and multi-shot narrative generation while attempting to maintain subject consistency.",
+        "date": "30 SEP 2026",
+        "region": "COMFYUI · INFRASTRUCTURE",
+        "title": "Comfy API turns workflows into deployable production services",
+        "text": "ComfyUI announced a production API layer for packaging workflows once and running them remotely on chosen GPU infrastructure. This reinforces a separation that matters to CineAI Lab: the filmmaking interface can sit above replaceable execution engines.",
+        "source": "ComfyUI",
+        "url": "https://blog.comfy.org/archive"
+      },
+      {
+        "date": "28 SEP 2026",
+        "region": "WAN · VIDEO",
+        "title": "Wan 2.7 explicitly supports first-and-last-frame video generation",
+        "text": "Alibaba's current Wan image-to-video documentation lists three modes: first-frame generation, first-and-last-frame generation, and video continuation. This is closer to a filmmaker's keyframe logic than the Wan 2.2 local workflow tested by CineAI Lab, which used a starting image plus prompt.",
         "source": "Alibaba Cloud",
         "url": "https://www.alibabacloud.com/help/en/model-studio/wan-image-to-video-guide"
       },
       {
-        "date": "06–10 JUL 2026",
-        "region": "BELGIUM",
-        "title": "VAF runs “Human in the Loop” AI workshops for creators and producers",
-        "text": "The Flemish Audiovisual Fund organised practical sessions on preserving creative voice, production integration, governance and responsible human-led AI use in film and television.",
-        "source": "Vlaams Audiovisueel Fonds",
-        "url": "https://www.vaf.be/evenementen/workshop-ai-regisseurs-scenaristen"
+        "date": "23 SEP 2026",
+        "region": "COMFYUI · MULTI-MODEL",
+        "title": "Comfy Router abstracts multiple frontier media models behind one API",
+        "text": "Comfy Router launched as a single API for several image, video, 3D and audio models. For filmmaking tools, the important signal is architectural: a project no longer needs to be designed around one model vendor.",
+        "source": "ComfyUI",
+        "url": "https://blog.comfy.org/p/introducing-comfy-router-one-api"
       },
       {
-        "date": "23 JUN 2026",
-        "region": "US · WORLD",
-        "title": "Adobe Firefly increasingly behaves as a multi-model video workspace",
-        "text": "Adobe now lets creators generate video with Firefly Video and partner models from the same environment, with camera controls and a beta timeline. This is another sign that aggregation is moving inside established creative suites.",
-        "source": "Adobe",
-        "url": "https://helpx.adobe.com/uk/firefly/web/work-with-audio-and-video/work-with-video/generate-videos-using-text-prompts.html"
-      },
-      {
-        "date": "18 MAY 2026",
-        "region": "FRANCE",
-        "title": "Cannes On Air places audiovisual AI at the centre of its roadmap",
-        "text": "The Cannes consortium identified AI applied to audiovisual production, training and talent support among its strategic priorities, including future work with INA and the World AI Film Festival.",
-        "source": "City of Cannes",
-        "url": "https://www.cannes.com/fr/index/actualites/annee-2026/mai/a-cannes-le-consortium-cannes-on-air-prepare-l-avenir-de-l-audiovisuel.html"
-      },
-      {
-        "date": "26 APR 2026",
-        "region": "US · WORLD",
-        "title": "OpenAI discontinues the Sora product while keeping an API sunset window",
-        "text": "The Sora web and app experiences ended on 26 April 2026, with the API scheduled to end on 24 September 2026. For CineAI Lab this is a concrete reminder that a film project should survive the disappearance of any single provider or interface.",
-        "source": "OpenAI",
-        "url": "https://help.openai.com/en/articles/20001152-what-to-know-about-the-sora-discontinuation"
-      },
-      {
-        "date": "21–22 APR 2026",
-        "region": "FRANCE",
-        "title": "World AI Film Festival returns to Cannes",
-        "text": "The second WAIFF edition combined an international competition of AI-assisted films, professional meetings and public screenings, confirming that AI film is becoming a visible festival category.",
-        "source": "City of Cannes",
-        "url": "https://www.cannes.com/fr/index/cannes-soleil/grands-articles/n-269-avril-2026/world-ai-film-festival-l-ia-fait-son-cinema.html"
-      },
-      {
-        "date": "31 MAR 2026",
-        "region": "US · WORLD",
-        "title": "Google releases Veo 3.1 Lite for lower-cost developer access",
-        "text": "Veo 3.1 Lite entered the Gemini API with text-to-video and image-to-video, landscape and portrait formats, 720p/1080p and 4, 6 or 8 second duration options. The signal is not only quality, but falling access cost.",
-        "source": "Google",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/veo-3-1-lite/"
-      },
-      {
-        "date": "05 FEB 2026",
-        "region": "CHINA · WORLD",
-        "title": "Kling 3.0 pushes toward multimodal narrative and shot control",
-        "text": "Kuaishou describes Kling 3.0 as a multimodal video system combining text, image, audio and video inputs, several generation and editing tasks, stronger consistency, shot control and native multilingual audio for clips up to 15 seconds.",
-        "source": "Kuaishou Technology",
-        "url": "https://ir.kuaishou.com/news-releases/news-release-details/kling-ai-launches-30-model-ushering-era-where-everyone-can-be"
-      },
-      {
-        "date": "11 DEC 2025",
-        "region": "US · WORLD",
-        "title": "Disney and OpenAI sign a major licensing agreement",
-        "text": "The three-year agreement covered more than 200 Disney, Marvel, Pixar and Star Wars characters for short Sora videos, alongside API adoption and ChatGPT deployment at Disney. It demonstrates that licensing, rights and AI production are beginning to converge commercially.",
-        "source": "OpenAI",
-        "url": "https://openai.com/index/disney-sora-agreement/"
-      },
-      {
-        "date": "LATE 2025",
-        "region": "US · WORLD",
-        "title": "Runway Gen-4.5 documents the limits behind increasingly cinematic output",
-        "text": "Runway’s own research notes remaining failures in causal reasoning and object permanence even as Gen-4.5 improves cinematic generation. The published limitations closely match CineAI Lab’s emphasis on continuity rather than spectacle alone.",
+        "date": "10 SEP 2026",
+        "region": "RUNWAY · RESEARCH",
+        "title": "Runway frames real-time generation as the next video-model target",
+        "text": "Runway described research aimed at reducing time-to-first-frame and moving from wait-for-a-finished-clip generation toward streaming video. Faster feedback is essential for filmmaking, where direction depends on repeated small corrections.",
         "source": "Runway",
-        "url": "https://runwayml.com/research/introducing-runway-gen-4.5?id=RunwayGen-4.5"
+        "url": "https://runway.com/news/research/towards-instant-video-generation"
+      },
+      {
+        "date": "08 SEP 2026",
+        "region": "ADOBE · CREATIVE WORKSPACE",
+        "title": "Adobe Firefly beta brings generation, editing, assets and video assembly into one workspace",
+        "text": "Adobe's unified generation-and-editing experience combines content generation, element-level editing, asset organisation and video assembly. The direction is significant: AI is moving from isolated generators toward interfaces that preserve project structure.",
+        "source": "Adobe",
+        "url": "https://helpx.adobe.com/fr/firefly/web/unified-generation-and-editing-experience/generation-and-editing-experience-overview.html"
+      },
+      {
+        "date": "12 AUG 2026",
+        "region": "OPEN VIDEO · LTX",
+        "title": "LTX-2.5 arrives with open local video workflows and keyframe-aware development",
+        "text": "LTX-2.5 brought a new rendering stack, consumer-hardware workflows and later keyframe-aware video decoding support. CineAI Lab nevertheless found that local tests still did not provide the shot continuity and directability required for its films.",
+        "source": "ComfyUI / Lightricks",
+        "url": "https://blog.comfy.org/p/ltx-25-day-0-support-in-comfyui"
+      },
+      {
+        "date": "31 JUL 2026",
+        "region": "BYTEDANCE · VIDEO",
+        "title": "Seedance 2.5 pushes reference-based generation and longer creative sequences",
+        "text": "ByteDance describes Seedance 2.5 as a shift from generating isolated clips toward completing creative works, with reference-based generation, multimodal control and clips up to 30 seconds.",
+        "source": "ByteDance Seed",
+        "url": "https://seed.bytedance.com/en/blog/one-take-creation-flexible-referencing-introducing-seedance-2-5"
+      },
+      {
+        "date": "02 AUG 2026",
+        "region": "EUROPE · AI ACT",
+        "title": "EU transparency obligations for AI-generated content become applicable",
+        "text": "Article 50 transparency rules now apply to certain AI-generated or manipulated content, including machine-readable marking duties for providers and disclosure duties for some synthetic media. Creative works receive specific treatment, but provenance is becoming part of production design.",
+        "source": "European Commission",
+        "url": "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems"
       }
     ],
     "perspectiveEyebrow": "Reading the signals",
-    "perspectiveTitle": "The movement is neither purely technical nor purely legal.",
-    "perspectiveText": "The interesting developments increasingly connect creation, training, funding, transparency and institutional responsibility. CineAI Lab watches for the places where these strands begin to form a real filmmaking environment rather than a collection of isolated tools."
+    "perspectiveTitle": "The field is moving from generation toward control, integration and iteration.",
+    "perspectiveText": "The most relevant change is not simply that video models are becoming more spectacular. First/last-frame control, frame interpolation, faster feedback, provenance and multi-model infrastructure all point toward a production environment in which filmmakers can keep their images, decisions and project memory while changing the engine underneath."
   },
   "creator": {
     "eyebrow": "Creator",
@@ -460,93 +444,87 @@ const content = {
     "manuscripts": "Working manuscript"
   },
   "experiments": {
-    "eyebrow": "Documented experiments",
-    "title": "The research questions came from things we actually tried.",
-    "intro": "From June to October 2026, CineAI Lab moved from writing and still-image development into reproducible audiovisual tests. The objective was not to claim finished AI films, but to discover which parts of a film workflow already work, where they break, and what an open production environment would need to preserve.",
-    "note": "These experiments are the basis of the site. Failures are kept because they changed the research direction.",
+    "eyebrow": "Experiments · June–October 2026",
+    "title": "The experiments changed the architecture.",
+    "intro": "CineAI Lab tested still-image development, local 2.5D motion, synthetic voice, visemes, facial animation, LTX, ComfyUI and Wan image-to-video workflows. The useful result was not a finished automatic film. It was a clearer definition of what a filmmaker-oriented system must preserve.",
+    "note": "The direction that emerged is image-first: validated images become persistent project assets; movement is attached to selected elements; unchanged regions remain locked; AI engines sit behind the interface and can be replaced.",
     "items": [
       {
+        "meta": "Still images · Storyboard",
+        "title": "The strongest control came before animation",
+        "text": "Character, framing, light and composition were most reliable when they were deliberately fixed as validated images. Regenerating them during animation often destroyed decisions that had already been made."
+      },
+      {
         "meta": "Blender · Python · FFmpeg",
-        "title": "Local 2.5D motion and export",
-        "text": "A local runner rendered PNG sequences and MP4 files. Camera motion and parallax were controllable, but the result often remained a moving still: the frame moved while the character did not perform."
+        "title": "Moving the frame is not the same as directing movement",
+        "text": "Camera motion, parallax and export could be controlled precisely, but a moving still remained a moving still. Cinematic movement has to belong to characters and objects, not only to the camera."
       },
       {
-        "meta": "PDG_004 → PDG_007",
-        "title": "Multilingual visemes and lip-sync",
-        "text": "French, English and Swedish articulation was structured as timed viseme data. The first script ignored that data; later patches read visemes and audio, but facial scale and anatomy still broke the illusion."
+        "meta": "Voice · Visemes · Face animation",
+        "title": "Speech can be generated; performance is harder",
+        "text": "Audio, timing and mouth-shape data could be produced, but gaze, hesitation, breathing, anatomy and identity remained difficult to direct as one coherent performance."
       },
       {
-        "meta": "Synthetic voice · Piper · hosted TTS",
-        "title": "Voice as performance, not merely speech",
-        "text": "Fully synthetic speech could be generated and timed. The unresolved question was dramatic direction: breathing, hesitation, rhythm and emotional intention still sounded too generic or mechanical in key tests."
+        "meta": "LTX · Local video",
+        "title": "Fast generation did not solve continuity",
+        "text": "Local LTX tests were useful for experimentation, but blur, camera instability and insufficient control over the starting image made the route unsuitable as CineAI Lab's core production method."
       },
       {
-        "meta": "SadTalker · LivePortrait · MuseTalk",
-        "title": "Facial animation routes",
-        "text": "Open face-animation approaches were explored to add gaze, blinking, head motion and lip synchronisation. Hardware, access and identity stability remained limiting, and no test was accepted as a complete acted performance."
+        "meta": "ComfyUI · Wan 2.2",
+        "title": "A starting image was not enough",
+        "text": "The tested local image-to-video workflows used a start image plus prompt. They often regenerated faces, hands, objects or camera behaviour, while setup and rendering could consume hours for a few seconds of uncertain output."
       },
       {
-        "meta": "Memories · elephant gait",
-        "title": "Non-human movement and weight",
-        "text": "Elephant movement was used to test locomotion rather than camera motion. Atmosphere and transitions were achievable, but weight transfer, foot contact and anatomical continuity were not solved by simple 2.5D methods."
-      },
-      {
-        "meta": "ComfyUI · editors · orchestration",
-        "title": "A fragmented toolchain became the research object",
-        "text": "Image generation, animation, voice, encoding and editing could be connected, but every handoff risked changing identity, timing, colour, resolution or intention. Recent ComfyUI/Wan image-to-video tests reinforced the problem: the tested workflows accepted a starting image but not a true end-image target, often regenerated the whole shot, and made small revisions expensive in generation time. This strengthened the image-first DIRECTOR approach: the project must survive its tools."
+        "meta": "DIRECTOR · CineLingo",
+        "title": "The next step is an image database with directed behaviours",
+        "text": "DIRECTOR is being developed around persistent image assets, shot instances, named selections, masks, locked regions, timing and CineLingo behaviours. The filmmaker defines what may change; AI becomes an execution layer inside the interface."
       }
     ],
-    "evidenceTitle": "Experiment record",
-    "evidenceIntro": "Named prototypes and concrete failures are preserved as evidence. The site therefore separates file success from cinematic success.",
+    "evidenceTitle": "What the experiments taught us",
+    "evidenceIntro": "The detailed prototypes are now condensed into six practical conclusions. The site records the change in method rather than preserving every diagnostic iteration.",
     "evidenceRows": [
       [
-        "PDG_001",
-        "2.5D camera test",
-        "MP4 produced",
-        "Read as a slideshow rather than acting"
+        "Validated images",
+        "Visual continuity",
+        "Strong control over character, framing and composition",
+        "Keep them as persistent assets rather than regenerate them"
       ],
       [
-        "PDG_004",
-        "Viseme timeline in JSON",
-        "PNG/MP4 render",
-        "Timeline existed but was ignored by the script"
+        "2.5D / camera",
+        "Motion from stills",
+        "Precise camera and compositing control",
+        "Camera movement alone does not create acting"
       ],
       [
-        "PDG_005",
-        "Corrected viseme + audio path",
-        "Visemes read; audio mux possible",
-        "Still a diagnostic 2.5D prototype"
+        "Voice / face",
+        "Spoken performance",
+        "Audio, timing and viseme pipelines are feasible",
+        "Identity and dramatic performance remain fragile"
       ],
       [
-        "PDG_006",
-        "Timed mouth-shape sequence",
-        "Mouth changed with speech",
-        "Lips too small and facial match failed"
-      ],
-      [
-        "PDG_007",
-        "Anatomical calibration",
-        "Control board produced",
-        "Result still below acceptance threshold"
-      ],
-      [
-        "Elephant gait",
-        "Non-human locomotion",
-        "Atmosphere and motion explored",
-        "Weight transfer and foot contact unresolved"
+        "LTX",
+        "Local video generation",
+        "Rapid experimental iterations",
+        "Insufficient image fidelity and shot control for the film"
       ],
       [
         "Wan 2.2 / ComfyUI",
-        "Animate a validated still image",
-        "Local image-to-video pipeline tested",
-        "No true start/end-image control in the tested workflow; whole-shot regeneration, identity drift and long iteration times"
+        "Image-to-video",
+        "Open local workflows can render real clips",
+        "Start-image-only control, identity drift and long iteration times in the tested setup"
+      ],
+      [
+        "DIRECTOR / CineLingo",
+        "Filmmaker control",
+        "Database, selections, timeline and behaviours define the shot",
+        "AI should animate only what the filmmaker authorises"
       ]
     ],
     "colHeaders": [
-      "Prototype",
+      "Experiment",
       "Question",
       "What worked",
-      "Observed limit"
+      "Conclusion"
     ]
   }
 };
