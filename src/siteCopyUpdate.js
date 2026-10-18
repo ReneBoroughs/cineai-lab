@@ -41,7 +41,6 @@ content.research.items.push([
   'Creator-first access',
   'Explore an open production model in which creators can experiment without paying for every attempt, retain ownership and direction of their work, and contribute a limited, capped share of revenue only after meaningful commercial success.',
 ]);
-content.research.manuscript.description = 'The working manuscript brings together the experiments, failures, open-film questions and European context.';
 
 content.benchmark.eyebrow = 'Working method';
 content.benchmark.title = 'Test. Observe. Document. Improve.';
