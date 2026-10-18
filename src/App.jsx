@@ -327,6 +327,26 @@ function ResearchPage() {
         </div>
       </section>
 
+      <section className="paper-section benchmark-editorial">
+        <div className="page-width benchmark-editorial-inner">
+          <div>
+            <p className="eyebrow dark-eyebrow">{t.director.eyebrow}</p>
+            <h2>{t.director.title}</h2>
+            <p>{t.director.intro}</p>
+            <p><strong>{t.director.principle}</strong></p>
+            <p>{t.director.flow}</p>
+          </div>
+          <div className="benchmark-editorial-list">
+            {t.director.items.map(([title, text], index) => (
+              <article key={title}>
+                <strong>{String(index + 1).padStart(2, '0')}</strong>
+                <div><h3>{title}</h3><p>{text}</p></div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="research-challenges">
         <div className="page-width">
           <div className="research-challenges-heading">
