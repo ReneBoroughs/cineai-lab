@@ -4,7 +4,7 @@ content.meta.title = 'CineAI Lab — Experiments at the beginning of AI-assisted
 content.meta.description = 'CineAI Lab documents early experiments in cinema and artificial intelligence: what already works, what still fails, and which creative and technical problems remain unsolved.';
 
 content.homeGateway.title = 'Cinema with AI is still at the beginning.';
-content.homeGateway.lead = 'CineAI Lab documents early experiments with images, movement, voice and human direction to understand what works, what fails and what is still missing.';
+content.homeGateway.lead = 'CineAI Lab documents practical experiments with images, movement, voice and human direction, including an image-first approach in which the filmmaker defines the frames and the movement instead of asking AI to invent the whole shot.';
 content.homeGateway.primary = 'Explore the projects';
 content.homeGateway.secondary = 'See what is still missing';
 content.homeGateway.manuscriptIntro = 'A working manuscript gathers the experiments, failures and open questions.';
@@ -44,11 +44,32 @@ if (content.projects.cards?.[2]) {
 
 content.research.eyebrow = 'Open questions';
 content.research.title = 'What is still missing?';
-content.research.intro = 'AI can already generate striking images, voices and short clips. Coherent filmmaking is harder. CineAI Lab records the unresolved problems found in practical tests.';
+content.research.intro = 'AI can already generate striking images, voices and short clips. Coherent filmmaking is harder. CineAI Lab records the unresolved problems found in practical tests, including recent ComfyUI and Wan 2.2 image-to-video experiments.';
+content.research.items.push([
+  'Image-first filmmaking',
+  'Treat the film as a directed flipbook: define a start image, an end image and optional intermediate keyframes, then create the missing movement without redesigning the shot.',
+]);
+content.research.items.push([
+  'DIRECTOR · selected movement',
+  'Use named selections, locked regions and timeline behaviours inspired by Director/Lingo so only the intended hand, expression or object is animated while the rest of the frame and camera remain stable. Avoid regenerating unchanged areas when possible, because iteration time is part of the directing problem.',
+]);
 content.research.items.push([
   'Creator-first access',
   'Explore an open production model in which creators can experiment without paying for every attempt, retain ownership and direction of their work, and contribute a limited, capped share of revenue only after meaningful commercial success.',
 ]);
+content.experiments.evidenceRows.push([
+  'Wan 2.2 I2V',
+  'Animate a fixed family shot',
+  'Starting image accepted',
+  'In the tested workflow there was no second image defining the end state; the whole scene could be regenerated, causing identity/object/camera drift and long iteration times',
+]);
+
+content.benchmark.items.push([
+  '05',
+  'Direct the transition',
+  'Define start and end images, select what may move, lock what must remain unchanged, and evaluate whether the generated transition preserves the shot.',
+]);
+
 content.research.manuscript.description = 'The working manuscript brings together the experiments, failures, open-film questions and European context.';
 
 content.benchmark.eyebrow = 'Working method';
@@ -66,7 +87,10 @@ content.creator.p1 = 'is a writer and founder of CineAI Lab, an independent expe
 content.creator.p2 = 'The aim is not to present AI cinema as a mature genre. The projects are practical test cases used to identify missing tools, open questions and possible directions.';
 
 content.collaborate.title = 'Looking for people working on the same unresolved problems.';
-content.collaborate.intro = 'CineAI Lab welcomes dialogue with filmmakers, researchers and creative technologists working on continuity, performance, open workflows and responsible AI.';
+content.collaborate.intro = 'CineAI Lab welcomes dialogue with filmmakers, researchers and creative technologists working on continuity, performance, image-first workflows and responsible AI.';
+if (content.collaborate.cards?.[2]) {
+  content.collaborate.cards[2][1] = 'Build tools that can animate selected changes between defined images, with locked regions, camera lock and persistent character/object identity instead of regenerating the whole shot.';
+}
 
 content.footer = 'Independent experiments on cinema and AI.';
 content.common.projects = 'Projects';
