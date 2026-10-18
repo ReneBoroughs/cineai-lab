@@ -161,8 +161,8 @@ const content = {
   },
   "projects": {
     "eyebrow": "Original IP",
-    "title": "A focused slate of narrative projects and demonstrators.",
-    "intro": "Each project is both a creative work and a test case for the future of AI-native cinema.",
+    "title": "Original films used to test a filmmaker-directed AI workflow.",
+    "intro": "The films come first. Each project is developed as a creative work, while its scenes expose concrete problems of continuity, performance, movement and selective AI animation.",
     "prototype": {
       "eyebrow": "Prototype A · Talking CEO",
       "title": "The speech begins to move.",
@@ -198,22 +198,22 @@ const content = {
         ]
       },
       {
-        "meta": "Case Study 03",
+        "meta": "Current Film · Image-first production",
         "title": "The Missing Piece",
         "image": "/media/missing-part.png",
-        "alt": "An older man seated at a table with papers while a woman stands by a window at dusk.",
-        "text": "A rapidly developed dramatic project about retirement, fragility, social bonds and the quiet conflicts that surface when time, identity and future security are thrown into question. It tests ensemble scenes, intimate realism and slow-burn emotional shifts.",
+        "alt": "Chinese-inspired watercolor landscape assembled as a jigsaw puzzle with a missing piece.",
+        "text": "The current film project follows Mateo across Guatemala and Sweden, linking a childhood puzzle motif with migration, scientific work, ageing and a later technological crisis. It is CineAI Lab's main image-first production test, developed shot by shot from validated still images. The challenge is to preserve character identity, composition and objects while animating only the actions selected by the filmmaker.",
         "tags": [
-          "Ensemble drama",
-          "Social realism",
-          "Emotional continuity"
+          "Image-first production",
+          "Continuity across time",
+          "Selective motion & ensemble scenes"
         ]
       }
     ]
   },
   "symbol": {
     "title": "The Missing Piece",
-    "text": "We are working with a visual symbol that expresses absence, incompleteness, quiet harmony and the search for meaning.",
+    "text": "The puzzle is both a narrative motif and a working model for CineAI Lab: the filmmaker assembles the images first, then AI should create only the movement needed between them.",
     "alt": "Chinese-inspired watercolor landscape with a puzzle motif, a small boat and the character for beauty."
   },
   "research": {
