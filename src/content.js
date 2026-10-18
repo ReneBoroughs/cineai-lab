@@ -257,6 +257,31 @@ const content = {
       "file": "CineAI_Lab_Experimental_Foundations_Open_AI_Native_Cinema.pdf"
     }
   },
+  "director": {
+    "eyebrow": "DIRECTOR · Interface under development",
+    "title": "A film can be organised as a database of images, instances and behaviours.",
+    "intro": "CineAI Lab is developing DIRECTOR as an image-first filmmaking interface. Validated images remain persistent source assets instead of being regenerated at every pass. The project database records how those images are used in shots, which regions may move, which must remain locked, and what should happen over time.",
+    "principle": "The filmmaker defines the images, selections and movement. AI engines execute inside those limits.",
+    "flow": "Image database → shot instances → named selections → CineLingo behaviours → AI engine → rendered transition",
+    "items": [
+      [
+        "Image database",
+        "Validated still images are kept as stable source assets. The film should not depend on repeatedly regenerating them."
+      ],
+      [
+        "Shot instances",
+        "An image can be placed in a shot with position, scale, timing, masks, locked regions and continuity information stored separately from the source asset."
+      ],
+      [
+        "CineLingo behaviours",
+        "Natural-language direction is translated into timed actions attached to selected elements: move a hand, change a gaze, hold the background, keep the camera fixed."
+      ],
+      [
+        "AI inside the interface",
+        "Video and animation models become replaceable execution engines behind DIRECTOR rather than the place where the filmmaker has to construct the film."
+      ]
+    ]
+  },
   "benchmark": {
     "eyebrow": "Open film model",
     "title": "A practical benchmark, not a vague promise.",
@@ -437,7 +462,7 @@ const content = {
   "experiments": {
     "eyebrow": "Documented experiments",
     "title": "The research questions came from things we actually tried.",
-    "intro": "From June to August 2026, CineAI Lab moved from writing and still-image development into reproducible audiovisual tests. The objective was not to claim finished AI films, but to discover which parts of a film workflow already work, where they break, and what an open production environment would need to preserve.",
+    "intro": "From June to October 2026, CineAI Lab moved from writing and still-image development into reproducible audiovisual tests. The objective was not to claim finished AI films, but to discover which parts of a film workflow already work, where they break, and what an open production environment would need to preserve.",
     "note": "These experiments are the basis of the site. Failures are kept because they changed the research direction.",
     "items": [
       {
@@ -468,7 +493,7 @@ const content = {
       {
         "meta": "ComfyUI · editors · orchestration",
         "title": "A fragmented toolchain became the research object",
-        "text": "Image generation, animation, voice, encoding and editing could be connected, but every handoff risked changing identity, timing, colour, resolution or intention. This led to the Open Film Environment idea: the project must survive its tools."
+        "text": "Image generation, animation, voice, encoding and editing could be connected, but every handoff risked changing identity, timing, colour, resolution or intention. Recent ComfyUI/Wan image-to-video tests reinforced the problem: the tested workflows accepted a starting image but not a true end-image target, often regenerated the whole shot, and made small revisions expensive in generation time. This strengthened the image-first DIRECTOR approach: the project must survive its tools."
       }
     ],
     "evidenceTitle": "Experiment record",
@@ -509,6 +534,12 @@ const content = {
         "Non-human locomotion",
         "Atmosphere and motion explored",
         "Weight transfer and foot contact unresolved"
+      ],
+      [
+        "Wan 2.2 / ComfyUI",
+        "Animate a validated still image",
+        "Local image-to-video pipeline tested",
+        "No true start/end-image control in the tested workflow; whole-shot regeneration, identity drift and long iteration times"
       ]
     ],
     "colHeaders": [
