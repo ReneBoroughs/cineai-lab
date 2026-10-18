@@ -21,9 +21,6 @@ if (content.homeGateway.cards?.[2]) {
 
 content.hero.missionValue = 'What does filmmaking still need beyond generated images?';
 
-content.projects.eyebrow = 'Projects · test cases';
-content.projects.title = 'Stories used to test an unfinished technology.';
-content.projects.intro = 'These are not finished AI films. Each project is used to test a practical problem: continuity, performance, movement, voice or workflow.';
 if (content.projects.prototype) {
   content.projects.prototype.note = 'AI-assisted prototype · Experimental multi-tool workflow · Tools documented when technically verified · August 2026';
   content.projects.prototype.video = '/media/the-father-speaking-prototype.mp4?v=20260812';
@@ -37,11 +34,6 @@ if (content.projects.cards?.[1]) {
   content.projects.cards[1].meta = 'Experiment 02';
   content.projects.cards[1].text = 'A visual project used to test animal movement, atmosphere and continuity between still images and moving sequences.';
 }
-if (content.projects.cards?.[2]) {
-  content.projects.cards[2].meta = 'Experiment 03';
-  content.projects.cards[2].text = 'An intimate ensemble project used to test subtle performance, social realism and emotional continuity.';
-}
-
 content.research.eyebrow = 'Open questions';
 content.research.title = 'What is still missing?';
 content.research.intro = 'AI can already generate striking images, voices and short clips. Coherent filmmaking is harder. CineAI Lab records the unresolved problems found in practical tests.';
@@ -53,13 +45,6 @@ content.research.manuscript.description = 'The working manuscript brings togethe
 
 content.benchmark.eyebrow = 'Working method';
 content.benchmark.title = 'Test. Observe. Document. Improve.';
-
-content.watch.title = 'Watching an emerging field.';
-content.watch.intro = 'A selective watch on tools, public programmes, festivals, rights and regulation, with particular attention to France, Belgium and Europe.';
-content.watch.note = 'Only developments that may change what creators can test, fund, use or publish are kept here.';
-content.watch.perspectiveEyebrow = 'Why watch';
-content.watch.perspectiveTitle = 'The field is moving faster than its working methods.';
-content.watch.perspectiveText = 'CineAI Lab follows the signals that may help turn isolated generation tools into a controllable filmmaking workflow.';
 
 content.creator.eyebrow = 'About';
 content.creator.p1 = 'is a writer and founder of CineAI Lab, an independent experimental project exploring what AI can and cannot yet contribute to filmmaking.';
