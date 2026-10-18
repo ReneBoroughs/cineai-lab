@@ -254,8 +254,7 @@ const content = {
       "description": "Version 0.10 reframes CineAI Lab around image-directed filmmaking, DIRECTOR, CineLingo, persistent film memory, selective motion and replaceable AI engines.",
       "languageNote": "This website and the reference manuscript are published in English only, used here as the international working language of AI research, open-source software and audiovisual technology.",
       "button": "Read the manuscript",
-      "file": "CineAI_Lab_Experimental_Foundations_Open_AI_Native_Cinema.pdf",
-      "viewer": "/documents/manuscript.html"
+      "file": "CineAI_Lab_Experimental_Foundations_Open_AI_Native_Cinema.pdf"
     }
   },
   "director": {
