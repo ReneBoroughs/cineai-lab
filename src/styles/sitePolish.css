@@ -163,3 +163,20 @@
     max-width: 12ch;
   }
 }
+
+
+/* Manuscript CTA readability */
+.publication-home .button.primary,
+.manuscript-stage .button.primary {
+  color: #17110e !important;
+  background: #fff8ef !important;
+  border-color: rgba(23,17,14,.18) !important;
+  text-shadow: none !important;
+  opacity: 1 !important;
+}
+
+.publication-home .button.primary:hover,
+.manuscript-stage .button.primary:hover {
+  color: #17110e !important;
+  background: #ffffff !important;
+}
