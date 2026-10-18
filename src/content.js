@@ -249,7 +249,7 @@ const content = {
     "manuscript": {
       "eyebrow": "Single working manuscript",
       "heading": "One document, one stable reference.",
-      "status": "Version 0.9 · August 2026 · English reference edition",
+      "status": "Version 0.10 · 18 October 2026 · English reference edition",
       "title": "Experimental Foundations for Open AI-Native Cinema",
       "description": "The single English reference manuscript consolidates the experimental record, the sustained working collaboration with ChatGPT, the open-film argument, historical and European perspectives, a global technology watch and verified clickable official-source links.",
       "languageNote": "This website and the reference manuscript are published in English only, used here as the international working language of AI research, open-source software and audiovisual technology.",
